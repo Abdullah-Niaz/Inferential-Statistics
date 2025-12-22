@@ -1,1 +1,159 @@
 # Inferential Statistics
+
+## 1. What is Hypothesis Testing
+
+Hypothesis testing is a statistical decision-making framework used to draw conclusions about a population based on sample data. Its purpose is to evaluate whether there is enough statistical evidence to support or reject a claim about a population parameter, such as a mean or proportion.
+
+In simple terms, it helps answer questions like.
+“Is this observed result due to random chance, or is it statistically significant?”
+
+---
+
+## 2. Components of Hypothesis Testing
+
+### a. Null Hypothesis (H₀)
+
+The null hypothesis represents the default or status-quo assumption. It states that there is no effect, no difference, or no relationship.
+
+Example.
+H₀. The average height of students is 170 cm.
+
+### b. Alternative Hypothesis (H₁ or Hₐ)
+
+The alternative hypothesis contradicts the null hypothesis. It represents the claim we want to test or prove.
+
+Example.
+H₁. The average height of students is not 170 cm.
+
+---
+
+## 3. Mechanism of Hypothesis Testing (Step-by-Step)
+
+### Step 1. Formulate Hypotheses
+
+Define the null hypothesis and the alternative hypothesis clearly.
+
+### Step 2. Choose Significance Level (α)
+
+The significance level is the probability of rejecting the null hypothesis when it is actually true.
+Common values are 0.05, 0.01, and 0.10.
+
+Example.
+α = 0.05 means a 5% risk of making a wrong rejection.
+
+### Step 3. Select the Appropriate Test
+
+Choose a statistical test based on the data type, sample size, and population information.
+Examples include Z-test, t-test, chi-square test.
+
+### Step 4. Compute the Test Statistic
+
+Calculate a numerical value that measures how far the sample result deviates from the null hypothesis.
+
+### Step 5. Calculate the p-value
+
+Determine the probability of observing the test result, or something more extreme, assuming the null hypothesis is true.
+
+### Step 6. Make a Decision
+
+Compare the p-value with the significance level.
+
+* If p-value ≤ α, reject H₀
+* If p-value > α, fail to reject H₀
+
+### Step 7. Draw a Conclusion
+
+Interpret the result in the context of the original problem.
+
+---
+
+## 4. What is a p-value
+
+The p-value is the probability of obtaining a result at least as extreme as the observed one, assuming the null hypothesis is true.
+
+Important interpretation.
+
+* A small p-value indicates strong evidence against H₀
+* A large p-value indicates weak evidence against H₀
+
+Example.
+If p-value = 0.03 and α = 0.05, the result is statistically significant, and H₀ is rejected.
+
+Key clarification.
+The p-value does not tell you the probability that the null hypothesis is true. It only measures evidence against it.
+
+---
+
+## 5. What is a Z-test
+
+A Z-test is a parametric statistical test used to determine whether the mean of a sample differs significantly from a known population mean, or whether two population means differ, when certain conditions are met.
+
+---
+
+## 6. Conditions for Using a Z-test
+
+A Z-test is appropriate when.
+
+* The population standard deviation (σ) is known
+* The sample size is large (n ≥ 30), or the population is normally distributed
+* The data is continuous and randomly sampled
+
+---
+
+## 7. Z-test Formula
+
+For a single-sample Z-test.
+
+[
+Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
+]
+
+Where.
+
+* (\bar{x}) = sample mean
+* (\mu) = population mean
+* (\sigma) = population standard deviation
+* (n) = sample size
+
+---
+
+## 8. Decision Rule in Z-test
+
+You can make a decision using either method.
+
+### a. Critical Value Method
+
+Compare the calculated Z-value with the critical Z-value from the Z-table.
+
+### b. p-value Method
+
+Compare the p-value with α.
+
+If the calculated Z falls in the rejection region, or if p-value ≤ α, reject H₀.
+
+---
+
+## 9. Practical Example (Brief)
+
+Suppose.
+
+* Population mean = 50
+* Sample mean = 53
+* Population standard deviation = 10
+* Sample size = 36
+
+[
+Z = \frac{53 - 50}{10 / \sqrt{36}} = \frac{3}{1.67} \approx 1.80
+]
+
+At α = 0.05, the critical Z-value is ±1.96.
+Since 1.80 < 1.96, we fail to reject the null hypothesis.
+
+---
+
+## 10. Summary
+
+* Hypothesis testing is a formal method to make data-driven decisions
+* The p-value quantifies evidence against the null hypothesis
+* The Z-test is used when population variance is known and sample size is sufficiently large
+* Statistical significance does not automatically imply practical importance
